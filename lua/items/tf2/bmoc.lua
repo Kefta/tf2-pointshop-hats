@@ -1,4 +1,4 @@
-ITEM.Name = 'B.M.O.C'
+ITEM.Name = 'B.M.O.C.'
 ITEM.Price = 0
 ITEM.Model = 'models/player/items/all_class/xms_santa_hat_demo.mdl'
 ITEM.Attachment = 'eyes'
