@@ -14,6 +14,6 @@ end
 function ITEM:ModifyClientsideModel(ply, model, pos, ang)
 	pos = pos + (ang:Forward() * -4.4)
     model:SetModelScale(1.06, 0)
-	
+
 	return model, pos, ang
 end

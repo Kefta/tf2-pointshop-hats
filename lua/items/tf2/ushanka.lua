@@ -1,5 +1,5 @@
 ITEM.Name = 'Officer\'s Ushanka'
-ITEM.Price = 900
+ITEM.Price = 0
 ITEM.Model = 'models/player/items/heavy/heavy_ushanka.mdl'
 ITEM.Attachment = 'eyes'
 
@@ -13,6 +13,7 @@ end
 
 function ITEM:ModifyClientsideModel(ply, model, pos, ang)
 	pos = pos + (ang:Forward() * -5) + (ang:Up() * -2)
-	
+	model:SetModelScale(1, 0)
+
 	return model, pos, ang
 end

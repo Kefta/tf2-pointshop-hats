@@ -12,8 +12,8 @@ function ITEM:OnHolster(ply)
 end
 
 function ITEM:ModifyClientsideModel(ply, model, pos, ang)
-	pos = pos + (ang:Forward() * -8.8)
+	pos = pos + (ang:Forward() * -8.8) + (ang:Up() * 0)
     model:SetModelScale(1.35, 0)
-	
+
 	return model, pos, ang
 end

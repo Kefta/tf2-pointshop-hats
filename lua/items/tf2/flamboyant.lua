@@ -1,5 +1,5 @@
 ITEM.Name = 'Flamboyant Flamenco'
-ITEM.Price = 750
+ITEM.Price = 0
 ITEM.Model = 'models/player/items/pyro/fwk_pyro_flamenco.mdl'
 ITEM.Attachment = 'eyes'
 
@@ -13,6 +13,7 @@ end
 
 function ITEM:ModifyClientsideModel(ply, model, pos, ang)
 	pos = pos + (ang:Forward() * -6) + (ang:Up() * -1)
-    
+    model:SetModelScale(1, 0)
+
 	return model, pos, ang
 end

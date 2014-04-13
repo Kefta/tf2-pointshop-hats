@@ -1,5 +1,5 @@
 ITEM.Name = 'Tyrant\'s Helm'
-ITEM.Price = 900
+ITEM.Price = 0
 ITEM.Model = 'models/player/items/soldier/soldier_viking.mdl'
 ITEM.Attachment = 'eyes'
 
@@ -13,6 +13,7 @@ end
 
 function ITEM:ModifyClientsideModel(ply, model, pos, ang)
 	pos = pos + (ang:Forward() * -4) + (ang:Up() * 3)
-	
+	model:SetModelScale(1, 0)
+
 	return model, pos, ang
 end
